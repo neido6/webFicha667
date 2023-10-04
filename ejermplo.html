@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="selEjemplo">
+        <option value="08:00:00">08:00 Am</option>
+        <option value="09:00:00">09:00 Am</option>
+        <option value="10:00:00">10:00 AM</option>
+        <option value="11:00:00">11:00 Am</option>
+        <option value="12:00:00">12:00 Pm</option>
+        <option value="13:00:00">01:00 Pm</option>
+        <option value="14:00:00">02:00 Pm</option>
+        <option value="15:00:00">03:00 Pm</option>
+    </select>
+</body>
+
+</html>
+<script>
+    horas = ["09:00:00", "11:00:00", "13:00:00", "14:00:00"]
+
+    let seleccion = document.getElementById("selEjemplo").children
+
+    Array.from(seleccion).forEach(element => {
+        horas.forEach(hora => {
+            if (element.value == hora) {
+                console.log("Igual");
+                element.setAttribute('disabled', '')
+            }
+            else {
+                console.log("No igual");
+            }
+        });
+    });
+
+</script>

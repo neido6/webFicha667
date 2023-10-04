@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "sunshine";
+  src: url("../font/Sunshine.otf");
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  font-family: "sunshine";
+  font-size: 2em;
+  font-weight: 200;
+  font-style: italic;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+}
+
+.padre {
+  background-color: aliceblue;
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.amarillo {
+  width: 20%;
+  height: 200px;
+  background-color: hsl(60, 100%, 50%);
+  order: 534;
+  align-self: flex-end;
+  flex-grow: 9;
+}
+
+.rojo {
+  width: 20%;
+  height: 200px;
+  background-color: red;
+  order: 295;
+  flex-grow: 3;
+}
+
+.verde {
+  padding-top: 50px;
+  width: 20%;
+  height: 150px;
+  background-color: rgb(6, 99, 63);
+  order: 1;
+  flex-grow: 3;
+}
+
+.morado {
+  width: 20%;
+  height: 200px;
+  background-color: rgb(173, 30, 149);
+  order: 3232;
+  flex-grow: 2;
+}
